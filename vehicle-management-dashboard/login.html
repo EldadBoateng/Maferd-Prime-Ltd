@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Sign in · Motiv</title>
+  <link rel="stylesheet" href="login.css">
+  <script src="login.js" defer></script>
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-card" aria-labelledby="loginTitle">
+      <a class="brand" href="login.html"><span class="brand-mark">M</span><span>motiv<span class="brand-dot">.</span></span></a>
+      <p class="eyebrow">NORTHSTAR MOTORS</p>
+      <h1 id="loginTitle">Welcome back</h1>
+      <p class="subtitle">Sign in to your vehicle operations workspace.</p>
+      <form id="loginForm" autocomplete="on">
+        <label for="username">Username</label>
+        <input id="username" name="username" autocomplete="username" required autofocus>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" autocomplete="current-password" required>
+        <p class="login-error" id="loginError" role="alert" hidden></p>
+        <button type="submit" id="submitButton">Sign in</button>
+      </form>
+      <p class="login-footnote">Private workspace · Session expires after 8 hours</p>
+    </section>
+  </main>
+</body>
+</html>
